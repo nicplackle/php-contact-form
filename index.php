@@ -68,8 +68,7 @@ mail($mailTo, $email, $txt, $headers);
         </div>  
         <div class="row">
             <label for="message">Your message</label>
-            <textarea rows="4" name="text_message"  placeholder="Enter your message here" class="form-message">
-            </textarea>
+            <textarea rows="4" name="text_message"  placeholder="Enter your message here" class="form-message"></textarea>
             <span class="border-focus-textarea"></span>
         </div>  
         <div class="row-button">
