@@ -1,0 +1,79 @@
+<!--
+
+// Alternative method.  Not possible with this to authenticate app yet
+
+// display errors is in development stage
+/*ini_set( 'display_errors', 1 );
+error_reporting( E_ALL );
+
+ini_set('SMTP', "smtp.gmail.com");
+ini_set('smtp_port', "25");
+ini_set('sendmail_from', "testmybest123@gmail.com");
+
+$invalidEmail = false;
+$name = '';
+$email = '';
+$message = '';
+
+if (isset($_POST['submit'])){
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST["message"];
+
+$mailTo = "testmybest123@gmail.com";
+$headers = "From: ".$email;
+$txt = "You have received an e-mail from ".$fullname.".\n\n".$message;
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $invalidEmail = true;
+}
+
+mail($mailTo, $email, $txt, $headers);
+//header("location: index.php?mailsend");
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PHP Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
+  </head>
+  <body>
+    <!-- Use POST method / Use .gitignore file to hide / Error message / gmail connection info -->
+  <main>
+    <div class="contact-form">
+    <form method="post" class="form-style">
+        <h1>Contact Us:</h1>
+        <div class="row">    
+          <p>Full Name</p>
+            <input type="text" name="name"  placeholder="Enter your full name">
+          <span class="border-focus"></span>  
+
+        </div>
+        <div class="row">
+            <p>Email</p>
+            <input type="mail" name="client_email"  placeholder="Enter your e-mail address" class="formelement">
+            <span class="border-focus"></span>  
+          </div>  
+          <div class="row">
+            <p>Your message</p>
+            <textarea name="text_message" style="width:200px; height:80px;"  placeholder="Enter your message here" class="form-message">
+            </textarea>
+            <span class="border-focus"></span>
+          </div>  
+            <input type="submit" name="submit" class="submit-button">
+            <div class="php-message">
+                <?php
+                include("php-to-mail.php");
+                ?>
+                </div>  
+    </form>
+</div>
+</main>
+  </body>
+</html>
+
