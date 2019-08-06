@@ -38,7 +38,7 @@ main {
   text-align: center;
   font-family: "Work Sans", sans-serif;
   font-size: 4rem;
-  color: rgb(0, 0, 0);
+  color: rgb(182, 21, 21);
   opacity: 0.8;
 }
 
@@ -168,6 +168,17 @@ main {
 
 .row-button input[type="submit"]:hover {
   text-decoration: underline;
+}
+
+.php-message {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+  color: rgb(68, 68, 68);
+  position: relative;
+  font-weight: 700;
+  flex: 1;
 }
 
 @media (max-width: 600px) {

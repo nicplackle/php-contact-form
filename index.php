@@ -49,31 +49,32 @@ mail($mailTo, $email, $txt, $headers);
     <form method="post" class="form-style">
         <h1>Contact Us:</h1>
         <div class="row">    
-          <p>Full Name</p>
+          <label for="lname">Full Name</label>
             <input type="text" name="name"  placeholder="Enter your full name">
           <span class="border-focus"></span>  
-
         </div>
         <div class="row">
-            <p>Email</p>
-            <input type="mail" name="client_email"  placeholder="Enter your e-mail address" class="formelement">
+            <label for="mail">Email</label>
+            <input type="email" name="client_email"  placeholder="Enter your e-mail address" class="formelement" id="mail">
             <span class="border-focus"></span>  
-          </div>  
-          <div class="row">
-            <p>Your message</p>
-            <textarea name="text_message" style="width:200px; height:80px;"  placeholder="Enter your message here" class="form-message">
+        </div>  
+        <div class="row">
+            <label for="message">Your message</label>
+            <textarea rows="4" name="text_message"       placeholder="Enter your message here" class="form-message">
             </textarea>
-            <span class="border-focus"></span>
-          </div>  
-            <input type="submit" name="submit" class="submit-button">
-            <div class="php-message">
-                <?php
-                include("php-to-mail.php");
-                ?>
-                </div>  
-    </form>
-</div>
-</main>
+            <span class="border-focus-textarea"></span>
+        </div>  
+        <div class="row-button">
+            <input type="submit" name="submit" class="submit-button" value="Send">
+        </div>  
+        <div class="php-message">
+            <?php
+            include("php-to-mail.php");
+            ?>
+        </div>  
+      </form>
+    </div>
+  </main>
   </body>
 </html>
 
