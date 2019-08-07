@@ -41,7 +41,7 @@ $sanitized_email = filter_var($clientEmail, FILTER_SANITIZE_EMAIL);
 
 ## Live version
 
-[PHP Contact Form](https://nicplackle.github.io/php-contact-form/ "Published Version")
+[PHP Contact Form](https://php-contact-form-nic.herokuapp.com/ "Published Version") on [Heroku](https://www.heroku.com/ "Heroku")
 
 ## Credentials
 
