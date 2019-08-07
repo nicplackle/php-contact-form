@@ -21,15 +21,13 @@ When a user fills in the contact form correctly it will send a message to my ema
 
 When the page opens the contact form slides in from the left.
 
-## Required functionalities
-
 ## Screenshot
 
 ![screenshot php-contact-form](./img/phpcontactformscreenshot.png)
 
 ## Snippet of PHP code
 
-This piece of code checks if the email address filled in has the correct non-illegal characters and if the variable \$email is a valid email address.
+This piece of code checks if the email address filled in has the correct non-illegal characters and if the variable _\$email_ is a valid email address.
 
 ```php
 $sanitized_email = filter_var($clientEmail, FILTER_SANITIZE_EMAIL);
@@ -39,20 +37,17 @@ $sanitized_email = filter_var($clientEmail, FILTER_SANITIZE_EMAIL);
         echo "Enter a valid email address";
         exit;
     }
-    ```
+```
 
 ## Live version
 
-[PHP Contact Form](https://nicplackle.github.io/php-contact-form)
+[PHP Contact Form](https://nicplackle.github.io/php-contact-form/ "Published Version")
 
 ## Credentials
 
-I based the styling of my contact form on [this one](https://codepen.io/maaajo/pen/gEpXOJ)
+I based the styling of my contact form on [this one](https://codepen.io/maaajo/pen/gEpXOJ/)
 on codepen, made by maaajo.
-
 
 ## License
 
-[MIT License](https://choosealicense.com/licenses/mit)
-````
-
+[MIT License](https://choosealicense.com/licenses/mit/)
