@@ -31,7 +31,7 @@ When the page opens the contact form slides in from the left.
 
 This piece of code checks if the email address filled in has the correct non-illegal characters and if the variable \$email is a valid email address.
 
-````php
+```php
 $sanitized_email = filter_var($clientEmail, FILTER_SANITIZE_EMAIL);
     if (filter_var($sanitized_email, FILTER_VALIDATE_EMAIL)) {
         $mail;
@@ -43,7 +43,7 @@ $sanitized_email = filter_var($clientEmail, FILTER_SANITIZE_EMAIL);
 
 ## Live version
 
-[PHP Contact Form](https://nicplackle.github.io/php-contact-form/)
+[PHP Contact Form](https://nicplackle.github.io/php-contact-form)
 
 ## Credentials
 
@@ -53,5 +53,5 @@ on codepen, made by maaajo.
 
 ## License
 
-[MIT License](https://choosealicense.com/licenses/mit/)
-````
+[MIT License](https://choosealicense.com/licenses/mit)
+
